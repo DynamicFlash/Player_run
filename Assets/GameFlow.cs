@@ -77,6 +77,7 @@ public class GameFlow : MonoBehaviour
                 {   
                     Debug.Log("Garbage");     
                     SpawnObj = Garbagebags;
+
                 }
                 else
                 {   Debug.Log("Barrel");     
@@ -117,7 +118,8 @@ public class GameFlow : MonoBehaviour
 
         nextObsLoc0 = nextRoadLoc;
         nextObsLoc0.x = randX;
-
+        nextObsLoc0.y = 0.165f;
+        
         Instantiate(roadBlockObj, nextRoadLoc, roadBlockObj.rotation);
 
         SpawnObj = getSpawnObstacles(prevSpawnObj);
@@ -128,6 +130,8 @@ public class GameFlow : MonoBehaviour
         nextObsLoc1 = nextRoadLoc;
 
         nextObsLoc1.x = randX;
+        nextObsLoc1.y = 0.165f;
+
         SpawnObj = getSpawnObstacles(prevSpawnObj);
         SpawnObstacles(SpawnObj, nextObsLoc1);
         prevSpawnObj = SpawnObj;
