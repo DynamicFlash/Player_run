@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &418041626041687301
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7459114161583595462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &2699101566035304975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7,9 +21,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1353633890, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353633891, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353633891, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353633892, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4823700850159041993, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
       propertyPath: m_Name
       value: propanetankstack Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823700850159041993, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 5312817031895770995, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
       propertyPath: m_RootOrder
@@ -57,3 +91,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+--- !u!1 &7459114161583595462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4823700850159041993, guid: 534a71cbd5ed4da49999ced01364e92b, type: 3}
+  m_PrefabInstance: {fileID: 2699101566035304975}
+  m_PrefabAsset: {fileID: 0}

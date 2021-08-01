@@ -17,6 +17,7 @@ public class GameFlow : MonoBehaviour
     public Transform Garbagebags;
     public Transform PropaneTank;
     public Transform WoodenCreats;
+    public Transform CocainePacket;
 
     //Spawn obj
     private Transform SpawnObj;
@@ -25,6 +26,7 @@ public class GameFlow : MonoBehaviour
     private int randX;
     private int prevRandX;
     private System.Random rand = new System.Random();
+    public static int CocaineEvi =0;
 
     // Start is called before the first frame update
     void Start()
@@ -73,14 +75,20 @@ public class GameFlow : MonoBehaviour
 
             if (randomiser<50)
             {   
+                if (randomiser<15)
+                {
+                    SpawnObj = Garbagebags;
+                }
+
                 if (randomiser<25)
                 {   
-                    Debug.Log("Garbage");     
-                    SpawnObj = Garbagebags;
+                    //Debug.Log("Garbage");   
+                    SpawnObj = CocainePacket;  
+                    
 
                 }
                 else
-                {   Debug.Log("Barrel");     
+                {   //Debug.Log("Barrel");     
                     SpawnObj = BarrelObj;
                 }
 
@@ -90,15 +98,15 @@ public class GameFlow : MonoBehaviour
             {   
                 if (randomiser<65)
                 {
-                    Debug.Log("propane");     
+                    //Debug.Log("propane");     
                     SpawnObj = PropaneTank;
                 }
                 else if(randomiser<75)
-                {   Debug.Log("creates");     
+                {   //Debug.Log("creates");     
                     SpawnObj = WoodenCreats;
                 }
                 else
-                {   Debug.Log("Boxes");     
+                {   //Debug.Log("Boxes");     
                     SpawnObj = BoxesStacked;
                 }
             }
