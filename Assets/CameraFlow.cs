@@ -7,7 +7,7 @@ public class CameraFlow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, (float)-5.8);
+        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, -5.8f);
 
     }
 
